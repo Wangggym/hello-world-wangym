@@ -1,10 +1,14 @@
 {
   "name": "hello-world-wangym",
-  "version": "1.0.2",
+  "version": "1.0.4",
   "description": "hellow world!",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:wangym0203/hello-world-wangym.git"
   },
   "author": "wangym",
   "license": "ISC"
