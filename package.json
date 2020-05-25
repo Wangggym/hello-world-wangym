@@ -1,8 +1,8 @@
 {
   "name": "hello-world-wangym",
-  "version": "1.1.0",
+  "version": "1.1.2",
   "description": "hellow world!",
-  "main": "index.js",
+  "main": "dist/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "clean": "rimraf ./dist",
@@ -13,6 +13,10 @@
     "url": "git@github.com:wangym0203/hello-world-wangym.git"
   },
   "author": "wangym",
+  "files": [
+    "/dist",
+    "/src"
+  ],
   "devDependencies": {
     "rimraf": "^3.0.2",
     "webpack": "^4.43.0",
