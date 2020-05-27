@@ -1,12 +1,12 @@
 {
   "name": "hello-world-wangym",
-  "version": "1.4.0",
+  "version": "1.5.0",
   "description": "hellow world!",
   "main": "dist/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "rimraf ./dist && webpack --config ./config/webpack.prod.js",
-    "start": "rimraf ./dist && webpack --config ./config/webpack.dev.js",
+    "build": "rimraf ./dist && tsc --emitDeclarationOnly && webpack --config ./config/webpack.prod.js",
+    "start": "rimraf ./dist && tsc --emitDeclarationOnly && webpack --config ./config/webpack.dev.js",
     "bdpublish": "npm run build && npm publish"
   },
   "repository": {
@@ -16,13 +16,15 @@
   "author": "wangym",
   "files": [
     "/dist",
-    "/src"
+    "/src",
+    "*.d.ts"
   ],
   "devDependencies": {
     "@babel/core": "^7.10.0",
     "@babel/preset-typescript": "^7.9.0",
     "babel-loader": "^8.1.0",
     "rimraf": "^3.0.2",
+    "typescript": "^3.9.3",
     "webpack": "^4.43.0",
     "webpack-cli": "^3.3.11",
     "webpack-merge": "^4.2.2"
