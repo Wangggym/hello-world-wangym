@@ -4,8 +4,8 @@ module.exports = {
   entry: "./src/index.js",
   output: {
     filename: "index.js",
-    path: path.resolve(__dirname, "dist"),
-    libraryTarget: 'umd',
+    path: path.resolve(__dirname, "../dist"),
+    libraryTarget: "umd",
     umdNamedDefine: true,
   },
 };
